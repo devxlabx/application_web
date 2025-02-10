@@ -1,0 +1,101 @@
+/* Style de base pour le corps de la page */
+body {
+  font-family: Arial, sans-serif; /* Définit la police de caractères par défaut */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur et la hauteur totales */
+  background-color: #f4f4f4; /* Définit une couleur de fond claire pour la page */
+  color: #333; /* Définit la couleur du texte par défaut */
+}
+
+/* Style pour l'en-tête */
+header {
+  background-color: #4caf50; /* Définit une couleur de fond verte */
+  color: white; /* Définit la couleur du texte en blanc */
+  padding: 1rem; /* Ajoute un padding autour du contenu */
+  text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Style pour la navigation */
+nav ul {
+  list-style-type: none; /* Supprime les puces par défaut de la liste */
+  padding: 0; /* Supprime les paddings par défaut */
+}
+
+/* Style pour les éléments de la liste de navigation */
+nav ul li {
+  display: inline; /* Affiche les éléments de la liste en ligne */
+  margin: 0 10px; /* Ajoute une marge horizontale entre les éléments */
+}
+
+/* Style pour les liens de navigation */
+nav ul li a {
+  color: white; /* Définit la couleur du texte des liens en blanc */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  font-weight: bold; /* Met le texte des liens en gras */
+}
+
+/* Style pour les liens de navigation au survol */
+nav ul li a:hover {
+  color: #ddd; /* Change la couleur du texte au survol */
+}
+
+/* Style pour la section principale */
+main {
+  padding: 2rem; /* Ajoute un padding autour du contenu */
+  background-color: white; /* Définit une couleur de fond blanche pour la section principale */
+  border-radius: 8px; /* Ajoute des coins arrondis à la section principale */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour un effet de profondeur */
+}
+
+/* Style pour les titres dans la section principale */
+main h2 {
+  color: #4caf50; /* Définit la couleur du texte des titres en vert */
+}
+
+/* Style pour le pied de page */
+footer {
+  background-color: #333; /* Définit une couleur de fond gris foncé */
+  color: white; /* Définit la couleur du texte en blanc */
+  text-align: center; /* Centre le texte horizontalement */
+  padding: 1rem; /* Ajoute un padding autour du contenu */
+  position: fixed; /* Fixe le pied de page en bas de la page */
+  width: 100%; /* Définit la largeur du pied de page à 100% */
+  bottom: 0; /* Positionne le pied de page en bas de la page */
+}
+
+/* Media query pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block; /* Affiche les éléments de la liste en bloc pour une meilleure lisibilité */
+    margin: 10px 0; /* Ajoute une marge verticale entre les éléments */
+    background-color: #45a049; /* Définit une couleur de fond pour les éléments de la liste */
+    border-radius: 4px; /* Ajoute des coins arrondis aux éléments de la liste */
+  }
+
+  nav ul li a {
+    color: white; /* Définit la couleur du texte des liens en blanc */
+  }
+}
+
+/* Media query pour les petits écrans (smartphones) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem; /* Réduit la taille de la police de l'en-tête */
+  }
+
+  nav ul li {
+    display: block; /* Affiche les éléments de la liste en bloc pour une meilleure lisibilité */
+    margin: 5px 0; /* Ajoute une marge verticale entre les éléments */
+    background-color: #45a049; /* Définit une couleur de fond pour les éléments de la liste */
+    border-radius: 4px; /* Ajoute des coins arrondis aux éléments de la liste */
+  }
+
+  nav ul li a {
+    color: white; /* Définit la couleur du texte des liens en blanc */
+  }
+
+  main {
+    padding: 1rem; /* Réduit le padding autour du contenu */
+  }
+}
